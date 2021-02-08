@@ -9,13 +9,11 @@ declare @view sysname
 declare cViews cursor for 
 select name from sys.views 
 open cViews
-
 fetch next from cViews into @view
 while @@FETCH_STATUS = 0 begin
         exec sp_refreshview @view
         fetch next from cViews into @view
 end
-
 close cViews
 deallocate cViews
 ```
