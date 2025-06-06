@@ -1,3 +1,4 @@
+theme: minima
+#remote_theme: jekyll/minima@1e8a445
 #theme: jekyll-theme-dinky
-theme: no-style-please
 #remote_theme: sighingnow/jekyll-gitbook
